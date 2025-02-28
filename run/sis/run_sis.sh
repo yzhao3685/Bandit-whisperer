@@ -1,0 +1,21 @@
+python3 ${1}/agent_oracle.py --hid 16 -l 2 --gamma 0.9 --cpu 1 \
+--exp_name ${4} \
+--home_dir ${1} \
+-s ${2} \
+--data ${3} \
+--save_string ${4} \
+-N ${5} -B ${6} \
+--agent_steps 20 \
+--agent_epochs ${7} \
+--agent_vdn_lr 2e-2 \
+--agent_vf_lr 5e-3 \
+--agent_train_vf_iters 1 \
+--pop_size ${8} \
+--agent_tp_transform 'linear' \
+--agent_tp_transform_dims 4 \
+--num_atoms ${9} \
+--target_q_update_freq ${10} \
+--noise_level ${11} \
+--n_noisy_arms ${12} \
+--no_comm_epochs ${13} \
+--noise_shape ${14} \
